@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+            android:id="@+id/buttonClient"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/client"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        </Button>
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/glucom"
+         android:layout_alignBottom="@+id/BtnBP"
+        android:layout_alignLeft="@+id/BtnECG"
+        android:layout_alignStart="@+id/BtnECG"
+        android:id="@+id/BtnGlucometer" />
+
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/pulesox"
+        android:id="@+id/BtnPuseOx"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/BtnECG"
+        android:layout_alignStart="@+id/BtnECG"
+        android:layout_marginTop="64dp" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/BtnThermo"
+        android:background="@drawable/thermo"
+        android:layout_alignBaseline="@+id/BtnPuseOx"
+        android:layout_alignBottom="@+id/BtnPuseOx"
+        android:layout_alignLeft="@+id/buttonSend"
+        android:layout_alignStart="@+id/buttonSend" />
+
+    <ImageButton
+        android:id="@+id/buttonSend"
+        android:layout_width="100dp"
+        android:text="Stethoscope"
+        android:layout_height="47dip"
+        android:background="@drawable/stet"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_alignBottom="@+id/BtnECG"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </ImageButton>
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+         android:background="@drawable/ecg"
+        android:id="@+id/BtnECG"
+        android:layout_marginRight="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Thermometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/BtnThermo"
+        android:layout_alignStart="@+id/BtnThermo"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:id="@+id/textView"
+        android:layout_below="@+id/BtnThermo" />
+
+    <TextView
+        android:text="Pulse Oximeter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignLeft="@+id/BtnPuseOx"
+        android:layout_alignStart="@+id/BtnPuseOx"
+        android:id="@+id/textView3" />
+
+    <TextView
+        android:text="stheriscope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonSend"
+        android:layout_alignRight="@+id/buttonSend"
+        android:layout_alignEnd="@+id/buttonSend"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/textView4" />
+
+    <TextView
+        android:text="Blood Presure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4"
+        android:id="@+id/textView6"
+        android:layout_alignTop="@+id/textView7" />
+
+    <TextView
+        android:text="ECG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/BtnECG"
+        android:layout_alignLeft="@+id/BtnECG"
+        android:layout_alignStart="@+id/BtnECG"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/images"
+         android:text="Blood Presure"
+
+        android:id="@+id/BtnBP"
+        android:layout_above="@+id/buttonClient"
+        android:layout_alignLeft="@+id/buttonSend"
+        android:layout_alignStart="@+id/buttonSend"
+        android:layout_marginBottom="19dp" />
+
+    <TextView
+        android:text="Glucometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/BtnGlucometer"
+        android:layout_alignLeft="@+id/BtnGlucometer"
+        android:layout_alignStart="@+id/BtnGlucometer"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp" />
+
+
+</RelativeLayout>
